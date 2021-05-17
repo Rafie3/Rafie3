@@ -611,7 +611,7 @@ static inline void filters_apply_sepia(
             : "S"(Sepia_Coefficients), "b"(pixels), "c"(position)
             : "%zmm0", "zmm1", "zmm2", "zmm3", "zmm4", "zmm5", "zmm6"
     );
-
+ 
 #else
 #error "Unsupported processor architecture"
 #endif
