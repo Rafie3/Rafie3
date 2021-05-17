@@ -258,7 +258,7 @@ static inline void filters_apply_brightness_contrast(
     /*
        Task #1: Write the intrinsics for the SIMD assembly bellow.
     */
-
+ 
     __m512 bright = _mm512_set1_ps (brightness);
     __m512 contr = _mm512_set1_ps (contrast);
     __m512i ints = _mm512_cvtepu8_epi32(_mm_load_si128((__m128i *) &pixels[position]));
