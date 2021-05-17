@@ -254,7 +254,7 @@ static inline void filters_apply_brightness_contrast(
 #elif defined FILTERS_SIMD_ASM_IMPLEMENTATION
 
 #if defined INTRINSICS
-
+ 
     /*
        Task #1: Write the intrinsics for the SIMD assembly bellow.
     */

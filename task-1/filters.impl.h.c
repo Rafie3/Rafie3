@@ -268,7 +268,7 @@ static inline void filters_apply_brightness_contrast(
     _mm512_mask_cvtusepi32_storeu_epi8(&pixels[position], 0xffff, ints);
 
 #elif defined x86_32_CPU
-
+ 
     // Process 16 color channels at the same time.
     __asm__ __volatile__ (
         "vbroadcastss (%0), %%zmm2\n\t"
